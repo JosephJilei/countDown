@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计时器</title>
+</head>
+	<script src='scripts/countDown.js'></script>
+<body>
+	<span id="days">0</span>天
+	<span id="hours">0</span>时
+	<span id="minutes">0</span>分
+	<span id="seconds">0</span>秒
+	<script>
+		var d=new Date('2015-3-20');
+		var timestamp=d.getTime();
+		var config={
+			days:$('days'),
+			hours:$('hours'),
+			minutes:$('minutes'),
+			seconds:$('seconds')
+		};
+		countdown(timestamp,config);
+	</script>
+</body>
+</html>
