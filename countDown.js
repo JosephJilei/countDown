@@ -5,10 +5,6 @@
  * @parameter {Object} config 
  */
  (function(window,undefined){
- 	window.$=function(id){
-		return (typeof id === 'string') ? document.getElementById(id) : id;
-	}
-
  	var CountDown=function(timestamp,config){
 		this.timestamp=timestamp;
 		this.config=config;
