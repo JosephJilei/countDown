@@ -14,10 +14,10 @@
 		var d=new Date('2015-3-20');
 		var timestamp=d.getTime();
 		var config={
-			days:$('days'),
-			hours:$('hours'),
-			minutes:$('minutes'),
-			seconds:$('seconds')
+			days:document.getElementById('days'),
+			hours:document.getElementById('hours'),
+			minutes:document.getElementById('minutes'),
+			seconds:document.getElementById('seconds')
 		};
 		countdown(timestamp,config);
 	</script>
